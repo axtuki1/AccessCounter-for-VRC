@@ -1,0 +1,8 @@
+{
+    "compilerOptions": {
+        "target":"es2020",
+        "sourceMap": false,
+        "module": "ES2020",
+        "outDir": "./build/"
+    }
+}

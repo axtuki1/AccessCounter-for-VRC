@@ -1,0 +1,39 @@
+{
+  "name": "VRChat-AccessCounter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build/index.js",
+  "scripts": {
+    "start": "node build/index.js",
+    "type-watch": "tsc -w",
+    "web-watch": "webpack -w",
+    "build": "tsc && webpack"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/express": "^4.17.13",
+    "@types/jquery": "^3.5.13",
+    "@types/node": "^18.11.0",
+    "body-parser": "^1.19.1",
+    "cheerio": "^1.0.0-rc.10",
+    "config": "^3.3.7",
+    "express": "^4.17.2",
+    "express-ws": "^5.0.2",
+    "jQuery": "^1.7.4",
+    "node-fetch": "^3.2.10",
+    "puppeteer": "^19.0.0",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.6",
+    "rndstr": "^1.0.0",
+    "ws": "^8.9.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15",
+    "ts-loader": "^9.4.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.4",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
+  }
+}
