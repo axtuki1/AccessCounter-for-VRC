@@ -5,7 +5,12 @@ export abstract class WebSocketAPI{
 
     init(){}
 
-    clients: WebSocketClient[] = DataHolder.getData("wsClients");
+    clients: WebSocketClient[];
+
+    constructor() {
+        this.clients = DataHolder.getData("wsClients");
+        if (this.clients == null) this.clients = [];
+    }
 
     connect(ws, req){
         const wsClient = new WebSocketClient(ws, req);

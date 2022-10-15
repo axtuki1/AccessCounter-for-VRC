@@ -12,7 +12,7 @@ export class VRChatAccess extends API{
         const blue_youtube = "https://youtu.be/8PaLHP51XqQ";
         const database_url = "https://script.google.com/macros/s/AKfycbx6eB3LO9YAPB2SKjJqyRHY1qOXMCt9LzkAKdMScFwz-j_kfgJP0zrYpyH0DcR5T0hHoQ/exec?mode=add&ipaddress="+req.ip;
         fetch(database_url).then((e) => e.json()).then((json) => {
-            if (json.data.value > 1) {
+            if (json["data"]["value"] > 1) {
                 res.redirect(red_youtube);
             } else {
                 res.redirect(blue_youtube);

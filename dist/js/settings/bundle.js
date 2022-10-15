@@ -14,36 +14,20 @@
 /*!*******************************!*\
   !*** ./src/settings/index.ts ***!
   \*******************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n$(function () {\r\n    $(\".reset.btn\").on({\r\n        \"click\": () => {\r\n            fetch(\"./api/v1/resetPushData\");\r\n        }\r\n    });\r\n});\r\n\r\n\n\n//# sourceURL=webpack://VRChat-AccessCounter/./src/settings/index.ts?");
+eval("\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\n$(function () {\r\n    $(\".reset.btn\").on({\r\n        \"click\": () => {\r\n            fetch(\"./api/v1/resetPushData\");\r\n        }\r\n    });\r\n});\r\n\n\n//# sourceURL=webpack://VRChat-AccessCounter/./src/settings/index.ts?");
 
 /***/ })
 
 /******/ 	});
-/************************************************************************/
-/******/ 	// The require scope
-/******/ 	var __webpack_require__ = {};
-/******/ 	
-/************************************************************************/
-/******/ 	/* webpack/runtime/make namespace object */
-/******/ 	(() => {
-/******/ 		// define __esModule on exports
-/******/ 		__webpack_require__.r = (exports) => {
-/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
-/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
-/******/ 			}
-/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
-/******/ 		};
-/******/ 	})();
-/******/ 	
 /************************************************************************/
 /******/ 	
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
 /******/ 	var __webpack_exports__ = {};
-/******/ 	__webpack_modules__["./src/settings/index.ts"](0, __webpack_exports__, __webpack_require__);
+/******/ 	__webpack_modules__["./src/settings/index.ts"](0, __webpack_exports__);
 /******/ 	
 /******/ })()
 ;

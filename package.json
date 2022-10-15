@@ -21,7 +21,6 @@
     "express": "^4.17.2",
     "express-ws": "^5.0.2",
     "jQuery": "^1.7.4",
-    "node-fetch": "^3.2.10",
     "puppeteer": "^19.0.0",
     "request": "^2.88.2",
     "request-promise": "^4.2.6",
