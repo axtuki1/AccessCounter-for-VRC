@@ -9,6 +9,9 @@
     "web-watch": "webpack -w",
     "build": "tsc && webpack"
   },
+  "engines": {
+    "node": ">=18.x"
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {
