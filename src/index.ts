@@ -11,7 +11,7 @@ const fs = require('fs');
 const bodyParser = require('body-parser');
 const port = process.env.PORT || config.serverPort || 3000;
 const package_json = require('../package.json');
-const isProxy = Boolean(process.env.IS_PROXY) || config.isPorxy || false;
+const isProxy = Boolean(process.env.IS_PROXY) || config.useProxy || false;
 const DEBUG = process.env.DEBUG || true;
 const isAllTimeGet = process.env.AllTIMEGET || false;
 
