@@ -8,14 +8,12 @@ export class VRChatAccess extends API{
 
     public type: string = "get";
     public response = (req, res) => {
-        const red_youtube = "https://youtu.be/euF_589aIK8";
-        const blue_youtube = "https://youtu.be/8PaLHP51XqQ";
-        const database_url = "https://script.google.com/macros/s/AKfycbx6eB3LO9YAPB2SKjJqyRHY1qOXMCt9LzkAKdMScFwz-j_kfgJP0zrYpyH0DcR5T0hHoQ/exec?mode=add&ipaddress="+req.ip;
+        const database_url = process.env.DATABASE_URL.replace("{IPADDR}", req.ip);
         fetch(database_url).then((e) => e.json()).then((json) => {
-            if (json["data"]["value"] > 1) {
-                res.redirect(red_youtube);
+            if (json["data"]["value"] <= 1) {
+                res.redirect(process.env.FIRST_ACCESS);
             } else {
-                res.redirect(blue_youtube);
+                res.redirect(process.env.OTHER_ACCESS);
             }
         });
     }
